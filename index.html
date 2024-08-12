@@ -7,39 +7,74 @@
     <title>Document</title>
   </head>
   <body>
+
+
+
+    <nav class=" navbar navbar-expand-lg shadow bg-primary sticky-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavMemuPanel">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand">Naver Brand</a>
+        <div class="collapse navbar-collapse" id="NavMemuPanel">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Product</a>
+            </li>
+          </ul>
+          <div>
+            <form class="d-flex gy-2">
+              <input type="text" class="form-control">
+              <button class="btn btn-primary ms-2">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+
+
+
+
     <div class="container">
       <!-- 10 buttons by Bootstrap Each button have different colors and properties. -->
 
-      <div class="row">
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+      <div class="row justify-content-center">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-danger">Submit</button>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-primary">Register</button>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-dark">Delete</button>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-info">Edit</button>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-light">Cancel</button>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-secondary">View</button>
         </div>
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-success">Confirm</button>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-warning">Alert</button>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-outline-success">Proceed</button>
         </div>
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
+        <div class="col-xl-1 col-lg-3 col-md-4 col-sm-6 col-12 gy-2">
           <button type="button" class="btn btn-outline-danger">Stop</button>
         </div>
       </div>
@@ -48,7 +83,7 @@
     </div>
 
     <!-- card start -->
-    <div class="container">
+    <div class="container ">
       <div class="row">
         <div class="col-4"></div>
         <div class="col-4">
@@ -176,10 +211,143 @@
  <!-- list end -->
 
 
+<!-- progressbar start -->
 
+ <div class="container mt-5">
+   <div class="row ">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+      </div>
+      
+    </div>
+    <div class="col-4"></div>
+  </div>
+ </div>
+<!-- progressbar end -->
 
     
+<!-- pagination start -->   
+
+<div class="container mt-5">
+  <div class="row">
+    <div  class="col-4 "></div>
+    <div class="col-4 ">
     
+      <nav class="">
+        <ul class="pagination">
+          <li class="page-item"><a href="#" class="page-link">Prev</a></li>
+          <li class="page-item active"><a href="#" class="page-link">1</a></li>
+          <li class="page-item"><a href="#" class="page-link">2</a></li>
+          <li class="page-item"><a href="#" class="page-link">3</a></li>
+          <li class="page-item"><a href="#" class="page-link">4</a></li>
+          <li class="page-item"><a href="#" class="page-link">5</a></li>
+          <li class="page-item"><a href="#" class="page-link">Next</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    <div  class="col-4 "></div>
+  </div>
+ </div>
+<!-- pagination end -->    
+ 
+
+
+
+<div class="container mt-5">
+  <div class="row ">
+    <div class="col-6">
+    <table class="table table-hover">
+  <thead>
+    <tr class="table-dark">
+      <th>#</th>
+      <th>First</th>
+      <th>Last</th>
+      <th>Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-primary">
+      <th scope=>1</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@johndoe</td>
+    </tr>
+    <tr class="table-secondary">
+      <th >2</th>
+      <td>Jane</td>
+      <td>Smith</td>
+      <td>@janesmith</td>
+    </tr>
+    <tr class="table-success">
+      <th >3</th>
+      <td>Mark</td>
+      <td>Johnson</td>
+      <td>@markjohnson</td>
+    </tr>
+  </tbody>
+</table>
+
+      
+    </div>
+    <div class="col-6">
+      <table class="table table-hover">
+        <thead>
+          <tr class="table-dark">
+            <th>#</th>
+            <th>First</th>
+            <th>Last</th>
+            <th>Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-primary">
+            <th scope=>1</th>
+            <td>John</td>
+            <td>Doe</td>
+            <td>@johndoe</td>
+          </tr>
+          <tr class="table-secondary">
+            <th >2</th>
+            <td>Jane</td>
+            <td>Smith</td>
+            <td>@janesmith</td>
+          </tr>
+          <tr class="table-success">
+            <th >3</th>
+            <td>Mark</td>
+            <td>Johnson</td>
+            <td>@markjohnson</td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+  </div>
+ </div>
+
+
+ <div class="container mt-5">
+  <div class="row ">
+    <div class="col-12 ">
+      
+      <div class="dropdown mb-5">
+        <button class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown">Click</button>
+        <ul class="dropdown-menu">
+              <li class="dropdown-item">A</li>
+              <li class="dropdown-item">B</li>
+              <li class="dropdown-item">C</li>
+              <li class="dropdown-item">D</li>
+              <li class="dropdown-item">E</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+ </div>
+
     <script src="./JS/bootstrap.bundle.js"></script>
   </body>
 </html>
