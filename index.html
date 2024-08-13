@@ -7,12 +7,16 @@
     <title>Document</title>
   </head>
   <body>
-
-
-
-    <nav class=" navbar navbar-expand-lg shadow bg-primary sticky-top" data-bs-theme="dark">
+    <nav
+      class="navbar navbar-expand-lg shadow bg-primary sticky-top"
+      data-bs-theme="dark"
+    >
       <div class="container-fluid">
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#NavMemuPanel">
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#NavMemuPanel"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <a href="#" class="navbar-brand">Naver Brand</a>
@@ -30,17 +34,13 @@
           </ul>
           <div>
             <form class="d-flex gy-2">
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" />
               <button class="btn btn-primary ms-2">Search</button>
             </form>
           </div>
         </div>
       </div>
     </nav>
-    
-
-
-
 
     <div class="container">
       <!-- 10 buttons by Bootstrap Each button have different colors and properties. -->
@@ -78,19 +78,17 @@
           <button type="button" class="btn btn-outline-danger">Stop</button>
         </div>
       </div>
-
-     
     </div>
 
     <!-- card start -->
-    <div class="container ">
+    <div class="container">
       <div class="row">
         <div class="col-4"></div>
         <div class="col-4">
           <div class="card mt-3 mb-3">
             <img
               class="card-img-top"
-              src="https://placehold.co/300x200"
+              src="./image/development-4536630_640.webp"
               alt=""
             />
             <div class="card-body">
@@ -109,244 +107,331 @@
     </div>
     <!-- card end -->
 
-    <!-- form start -->
+    
+<!-- form start -->
+<div class="container mt-5">
+  <div class="row gy-4">
+    <!-- Personal Information Section -->
+    <div class="col-md-4">
+      <form>
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" class="form-control bg-light" id="fullName" placeholder="Enter your full name">
+        </div>
+        <div class="form-group mt-3">
+          <label for="fatherName">Father's Name</label>
+          <input type="text" class="form-control bg-light" id="fatherName" placeholder="Enter father's name">
+        </div>
+        <div class="form-group mt-3">
+          <label for="motherName">Mother's Name</label>
+          <input type="text" class="form-control bg-light" id="motherName" placeholder="Enter mother's name">
+        </div>
+        <div class="form-group mt-3">
+          <label for="dateOfBirth">Date of Birth</label>
+          <input type="date" class="form-control bg-light" id="dateOfBirth">
+        </div>
+
+        <label class="mt-3">Gender</label>
+        <div class="form-check">
+          <input class="form-check-input" name="gender" type="radio" id="genderMale">
+          <label class="form-check-label" for="genderMale">Male</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="gender" type="radio" id="genderFemale">
+          <label class="form-check-label" for="genderFemale">Female</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="gender" type="radio" id="genderOther">
+          <label class="form-check-label" for="genderOther">Other</label>
+        </div>
+      </form>
+
+      <label class="mt-4" for="height">Select Height (cm):</label>
+<input type="range" id="height" class="form-range" min="100" max="250" step="1">
+<label for="ageRange">Select Age Range:</label>
+<input type="range" id="ageRange" class="form-range" min="18" max="100" step="1">
+
+    </div>
+
+    <!-- Contact Information Section -->
+    <div class="col-md-4">
+      <form>
+        <div class="form-group">
+          <label for="nationality">Nationality</label>
+          <input type="text" class="form-control bg-light" id="nationality" placeholder="Enter nationality">
+        </div>
+        <div class="form-group mt-3">
+          <label for="nidNumber">NID Number</label>
+          <input type="text" class="form-control bg-light" id="nidNumber" placeholder="Enter NID number">
+        </div>
+        <div class="form-group mt-3">
+          <label for="presentAddress">Present Address</label>
+          <textarea class="form-control bg-light" id="presentAddress" rows="2" placeholder="Enter present address"></textarea>
+        </div>
+        <div class="form-group mt-3">
+          <label for="permanentAddress">Permanent Address</label>
+          <textarea class="form-control bg-light" id="permanentAddress" rows="2" placeholder="Enter permanent address"></textarea>
+        </div>
+        <div class="form-group mt-3">
+          <label for="contactNumber">Contact Number</label>
+          <input type="tel" class="form-control bg-light" id="contactNumber" placeholder="Enter contact number">
+        </div>
+      </form>
+
+      <form class="mt-4">
+        <div class="form-group">
+          <label>Select your interests:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="interestMusic">
+            <label class="form-check-label" for="interestMusic">Music</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="interestSports">
+            <label class="form-check-label" for="interestSports">Sports</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="interestReading">
+            <label class="form-check-label" for="interestReading">Reading</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="interestTraveling">
+            <label class="form-check-label" for="interestTraveling">Traveling</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="interestGaming">
+            <label class="form-check-label" for="interestGaming">Gaming</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Additional Information Section -->
+    <div class="col-md-4">
+      <form>
+        <div class="form-group">
+          <label for="bloodGroup">Blood Group</label>
+          <select class="form-control bg-light" id="bloodGroup">
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+          </select>
+        </div>
+        <div class="form-group mt-3">
+          <label for="religion">Religion</label>
+          <select class="form-control bg-light" id="religion">
+            <option>Islam</option>
+            <option>Hinduism</option>
+            <option>Christianity</option>
+            <option>Buddhism</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group mt-3">
+          <label for="maritalStatus">Marital Status</label>
+          <select class="form-control bg-light" id="maritalStatus">
+            <option>Single</option>
+            <option>Married</option>
+            <option>Divorced</option>
+            <option>Widowed</option>
+          </select>
+        </div>
+        <div class="form-group mt-3">
+          <label for="photoUpload">Upload Photo</label>
+          <input type="file" class="form-control bg-light" id="photoUpload">
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+          <!-- form end -->
+    
+
+          <div class="container mt-5">
+            <!-- List of Skills -->
+            <div class="row justify-content-center">
+              <div class="col-8">
+                <ul class="list-group mb-4">
+                  <li class="list-group-item active">Language Skills</li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Bangla
+                    <span class="badge bg-primary rounded-pill">Advanced</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    English
+                    <span class="badge bg-success rounded-pill">Intermediate</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    Hindi
+                    <span class="badge bg-warning text-dark rounded-pill">Beginner</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                    German
+                    <span class="badge bg-secondary rounded-pill">Basic</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        
+            <!-- Progress Bars -->
+            <div class="row">
+              <div class="col-12">
+                <h5 class="text-center">Proficiency Levels</h5>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-primary"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Bangla 80%
+                  </div>
+                </div>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    English 60%
+                  </div>
+                </div>
+                <div class="progress mb-3">
+                  <div
+                    class="progress-bar bg-warning"
+                    role="progressbar"
+                    style="width: 40%"
+                    aria-valuenow="40"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    Hindi 40%
+                  </div>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-secondary"
+                    role="progressbar"
+                    style="width: 20%"
+                    aria-valuenow="20"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    German 20%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
     <div class="container mt-5">
-      <div class="row ">
-        <div class="col-4">
-         <form > <select class="form-control mt-3">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          <option>Option 4</option>
-          <option>Option 5</option>
-
-        </select></form>
-        </div>
-        <div class="col-4">
-          <form>
-            <div class="form-group">
-              <label >Email address</label>
-              <input type="email" class="form-control" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-              <label >Password</label>
-              <input type="password" class="form-control" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <label >File</label>
-              <input type="file" class="form-control" placeholder="Upload file">
-            </div>
-          
-            <div>
-              <input type="range" class="form-range">
-              <input type="range" class="form-range" min="0" max="10">
-              <input type="range" class="form-range" min="0" max="9" step="3">
-            </div>
-
-          </form>
-          
-        </div>
-        <div class="col-4">
-          <form>
-            <div class="form-group">
-              <label>Select your interests:</label>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="interest1">
-                <label class="form-check-label" for="interest1">
-                  Music
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="interest2">
-                <label class="form-check-label" for="interest2">
-                  Sports
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" name="a"  type="radio" value="" id="interest3">
-                <label class="form-check-label" for="interest3">
-                  Reading
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="interest4">
-                <label class="form-check-label" for="interest4">
-                  Traveling
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" name="a" type="radio" value="" id="interest5">
-                <label class="form-check-label" for="interest5">
-                  Gaming
-                </label>
-              </div>
-            </div>
-          
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-hover">
+            <thead>
+              <tr class="table-dark">
+                <th>#</th>
+                <th>Qualification</th>
+                <th>Institute</th>
+                <th>Group/Department</th>
+                <th>Result</th>
+                <th>Passing Year</th>
+                <th>Board</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary">
+                <th scope="row">1</th>
+                <td>Secondary School Certificate (SSC)</td>
+                <td>Abdullah Memorial High School</td>
+                <td>Science</td>
+                <td>3.56(out of GPA 5)</td>
+                <td>2019</td>
+                <td>Dhaka</td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">2</th>
+                <td>Higher Secondary Certificate (HSC)</td>
+                <td>Cambrian School and College</td>
+                <td>Science</td>
+                <td>4.09 (out of GPA 5)</td>
+                <td>2021</td>
+                <td>Dhaka</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">3</th>
+                <td>Bachelor of Science (BSc)</td>
+                <td>Daffodil International University</td>
+                <td>Computer Science and Engineering (CSE)</td>
+                <td>3rd Year Running</td>
+                <td>N/A</td>
+                <td>Daffodil Smart City, Birulia</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
 
-    <!-- form end -->
-
-
-
-     <!-- list start -->
-
-     <div class="container mt-5">
-      <div class="row justify-content-center ">
-        <div class="col-6">
-          <ul class="list-group">
-            <li class="list-group-item">Item 1</li>
-            <li class="list-group-item">Item 2</li>
-            <li class="list-group-item">Item 3</li>
-            <li class="list-group-item">Item 4</li>
-            <li class="list-group-item">Item 5</li>
-          </ul>
-          
-        </div>
-      </div>
-     </div>
- <!-- list end -->
-
-
-<!-- progressbar start -->
-
- <div class="container mt-5">
-   <div class="row ">
-    <div class="col-4"></div>
-    <div class="col-4">
-      <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-      </div>
-      
-    </div>
-    <div class="col-4"></div>
-  </div>
- </div>
-<!-- progressbar end -->
-
-    
-<!-- pagination start -->   
-
-<div class="container mt-5">
-  <div class="row">
-    <div  class="col-4 "></div>
-    <div class="col-4 ">
-    
-      <nav class="">
-        <ul class="pagination">
-          <li class="page-item"><a href="#" class="page-link">Prev</a></li>
-          <li class="page-item active"><a href="#" class="page-link">1</a></li>
-          <li class="page-item"><a href="#" class="page-link">2</a></li>
-          <li class="page-item"><a href="#" class="page-link">3</a></li>
-          <li class="page-item"><a href="#" class="page-link">4</a></li>
-          <li class="page-item"><a href="#" class="page-link">5</a></li>
-          <li class="page-item"><a href="#" class="page-link">Next</a></li>
-        </ul>
-      </nav>
-      
-    </div>
-    <div  class="col-4 "></div>
-  </div>
- </div>
-<!-- pagination end -->    
- 
-
-
-
-<div class="container mt-5">
-  <div class="row ">
-    <div class="col-6">
-    <table class="table table-hover">
-  <thead>
-    <tr class="table-dark">
-      <th>#</th>
-      <th>First</th>
-      <th>Last</th>
-      <th>Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="table-primary">
-      <th scope=>1</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@johndoe</td>
-    </tr>
-    <tr class="table-secondary">
-      <th >2</th>
-      <td>Jane</td>
-      <td>Smith</td>
-      <td>@janesmith</td>
-    </tr>
-    <tr class="table-success">
-      <th >3</th>
-      <td>Mark</td>
-      <td>Johnson</td>
-      <td>@markjohnson</td>
-    </tr>
-  </tbody>
-</table>
-
-      
-    </div>
-    <div class="col-6">
-      <table class="table table-hover">
-        <thead>
-          <tr class="table-dark">
-            <th>#</th>
-            <th>First</th>
-            <th>Last</th>
-            <th>Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table-primary">
-            <th scope=>1</th>
-            <td>John</td>
-            <td>Doe</td>
-            <td>@johndoe</td>
-          </tr>
-          <tr class="table-secondary">
-            <th >2</th>
-            <td>Jane</td>
-            <td>Smith</td>
-            <td>@janesmith</td>
-          </tr>
-          <tr class="table-success">
-            <th >3</th>
-            <td>Mark</td>
-            <td>Johnson</td>
-            <td>@markjohnson</td>
-          </tr>
-        </tbody>
-      </table>
-      
-    </div>
-  </div>
- </div>
-
-
- <div class="container mt-5">
-  <div class="row ">
-    <div class="col-12 ">
-      
-      <div class="dropdown mb-5">
-        <button class="btn btn-primary dropdown-toggle " data-bs-toggle="dropdown">Click</button>
-        <ul class="dropdown-menu">
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-4 text-center">
+          <div class="dropdown mb-5">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              data-bs-toggle="dropdown"
+            >
+              Click
+            </button>
+            <ul class="dropdown-menu">
               <li class="dropdown-item">A</li>
               <li class="dropdown-item">B</li>
               <li class="dropdown-item">C</li>
               <li class="dropdown-item">D</li>
               <li class="dropdown-item">E</li>
-        </ul>
+            </ul>
+          </div>
+        </div>
       </div>
-
     </div>
-  </div>
- </div>
+    
+
+    <!-- pagination start -->
+
+    <div class="container mt-3">
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <nav>
+            <ul class="pagination">
+              <li class="page-item"><a href="#" class="page-link">Prev</a></li>
+              <li class="page-item active">
+                <a href="#" class="page-link">1</a>
+              </li>
+              <li class="page-item"><a href="#" class="page-link">2</a></li>
+              <li class="page-item"><a href="#" class="page-link">3</a></li>
+              <li class="page-item"><a href="#" class="page-link">4</a></li>
+              <li class="page-item"><a href="#" class="page-link">5</a></li>
+              <li class="page-item"><a href="#" class="page-link">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    
+    <!-- pagination end -->
 
     <script src="./JS/bootstrap.bundle.js"></script>
   </body>
