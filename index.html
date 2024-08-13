@@ -107,235 +107,346 @@
     </div>
     <!-- card end -->
 
-    
-<!-- form start -->
-<div class="container mt-5">
-  <div class="row gy-4">
-    <!-- Personal Information Section -->
-    <div class="col-md-4">
-      <form>
-        <div class="form-group">
-          <label for="fullName">Full Name</label>
-          <input type="text" class="form-control bg-light" id="fullName" placeholder="Enter your full name">
-        </div>
-        <div class="form-group mt-3">
-          <label for="fatherName">Father's Name</label>
-          <input type="text" class="form-control bg-light" id="fatherName" placeholder="Enter father's name">
-        </div>
-        <div class="form-group mt-3">
-          <label for="motherName">Mother's Name</label>
-          <input type="text" class="form-control bg-light" id="motherName" placeholder="Enter mother's name">
-        </div>
-        <div class="form-group mt-3">
-          <label for="dateOfBirth">Date of Birth</label>
-          <input type="date" class="form-control bg-light" id="dateOfBirth">
+    <!-- form start -->
+    <div class="container mt-5">
+      <div class="row gy-4">
+        <!-- Personal Information Section -->
+        <div class="col-md-4">
+          <form>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input
+                type="text"
+                class="form-control bg-light"
+                id="fullName"
+                placeholder="Enter your full name"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="fatherName">Father's Name</label>
+              <input
+                type="text"
+                class="form-control bg-light"
+                id="fatherName"
+                placeholder="Enter father's name"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="motherName">Mother's Name</label>
+              <input
+                type="text"
+                class="form-control bg-light"
+                id="motherName"
+                placeholder="Enter mother's name"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="dateOfBirth">Date of Birth</label>
+              <input
+                type="date"
+                class="form-control bg-light"
+                id="dateOfBirth"
+              />
+            </div>
+
+            <label class="mt-3">Gender</label>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="gender"
+                type="radio"
+                id="genderMale"
+              />
+              <label class="form-check-label" for="genderMale">Male</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="gender"
+                type="radio"
+                id="genderFemale"
+              />
+              <label class="form-check-label" for="genderFemale">Female</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="gender"
+                type="radio"
+                id="genderOther"
+              />
+              <label class="form-check-label" for="genderOther">Other</label>
+            </div>
+          </form>
+
+          <label class="mt-4" for="height">Select Height (cm):</label>
+          <input
+            type="range"
+            id="height"
+            class="form-range"
+            min="100"
+            max="250"
+            step="1"
+          />
+          <label for="ageRange">Select Age Range:</label>
+          <input
+            type="range"
+            id="ageRange"
+            class="form-range"
+            min="18"
+            max="100"
+            step="1"
+          />
         </div>
 
-        <label class="mt-3">Gender</label>
-        <div class="form-check">
-          <input class="form-check-input" name="gender" type="radio" id="genderMale">
-          <label class="form-check-label" for="genderMale">Male</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" name="gender" type="radio" id="genderFemale">
-          <label class="form-check-label" for="genderFemale">Female</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" name="gender" type="radio" id="genderOther">
-          <label class="form-check-label" for="genderOther">Other</label>
-        </div>
-      </form>
+        <!-- Contact Information Section -->
+        <div class="col-md-4">
+          <form>
+            <div class="form-group">
+              <label for="nationality">Nationality</label>
+              <input
+                type="text"
+                class="form-control bg-light"
+                id="nationality"
+                placeholder="Enter nationality"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="nidNumber">NID Number</label>
+              <input
+                type="text"
+                class="form-control bg-light"
+                id="nidNumber"
+                placeholder="Enter NID number"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="presentAddress">Present Address</label>
+              <textarea
+                class="form-control bg-light"
+                id="presentAddress"
+                rows="2"
+                placeholder="Enter present address"
+              ></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label for="permanentAddress">Permanent Address</label>
+              <textarea
+                class="form-control bg-light"
+                id="permanentAddress"
+                rows="2"
+                placeholder="Enter permanent address"
+              ></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label for="contactNumber">Contact Number</label>
+              <input
+                type="tel"
+                class="form-control bg-light"
+                id="contactNumber"
+                placeholder="Enter contact number"
+              />
+            </div>
+          </form>
 
-      <label class="mt-4" for="height">Select Height (cm):</label>
-<input type="range" id="height" class="form-range" min="100" max="250" step="1">
-<label for="ageRange">Select Age Range:</label>
-<input type="range" id="ageRange" class="form-range" min="18" max="100" step="1">
-
-    </div>
-
-    <!-- Contact Information Section -->
-    <div class="col-md-4">
-      <form>
-        <div class="form-group">
-          <label for="nationality">Nationality</label>
-          <input type="text" class="form-control bg-light" id="nationality" placeholder="Enter nationality">
-        </div>
-        <div class="form-group mt-3">
-          <label for="nidNumber">NID Number</label>
-          <input type="text" class="form-control bg-light" id="nidNumber" placeholder="Enter NID number">
-        </div>
-        <div class="form-group mt-3">
-          <label for="presentAddress">Present Address</label>
-          <textarea class="form-control bg-light" id="presentAddress" rows="2" placeholder="Enter present address"></textarea>
-        </div>
-        <div class="form-group mt-3">
-          <label for="permanentAddress">Permanent Address</label>
-          <textarea class="form-control bg-light" id="permanentAddress" rows="2" placeholder="Enter permanent address"></textarea>
-        </div>
-        <div class="form-group mt-3">
-          <label for="contactNumber">Contact Number</label>
-          <input type="tel" class="form-control bg-light" id="contactNumber" placeholder="Enter contact number">
-        </div>
-      </form>
-
-      <form class="mt-4">
-        <div class="form-group">
-          <label>Select your interests:</label>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="interestMusic">
-            <label class="form-check-label" for="interestMusic">Music</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="interestSports">
-            <label class="form-check-label" for="interestSports">Sports</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="interestReading">
-            <label class="form-check-label" for="interestReading">Reading</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="interestTraveling">
-            <label class="form-check-label" for="interestTraveling">Traveling</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="interestGaming">
-            <label class="form-check-label" for="interestGaming">Gaming</label>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <!-- Additional Information Section -->
-    <div class="col-md-4">
-      <form>
-        <div class="form-group">
-          <label for="bloodGroup">Blood Group</label>
-          <select class="form-control bg-light" id="bloodGroup">
-            <option>A+</option>
-            <option>A-</option>
-            <option>B+</option>
-            <option>B-</option>
-            <option>O+</option>
-            <option>O-</option>
-            <option>AB+</option>
-            <option>AB-</option>
-          </select>
-        </div>
-        <div class="form-group mt-3">
-          <label for="religion">Religion</label>
-          <select class="form-control bg-light" id="religion">
-            <option>Islam</option>
-            <option>Hinduism</option>
-            <option>Christianity</option>
-            <option>Buddhism</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group mt-3">
-          <label for="maritalStatus">Marital Status</label>
-          <select class="form-control bg-light" id="maritalStatus">
-            <option>Single</option>
-            <option>Married</option>
-            <option>Divorced</option>
-            <option>Widowed</option>
-          </select>
-        </div>
-        <div class="form-group mt-3">
-          <label for="photoUpload">Upload Photo</label>
-          <input type="file" class="form-control bg-light" id="photoUpload">
-        </div>
-        
-      </form>
-    </div>
-  </div>
-</div>
-
-
-
-          <!-- form end -->
-    
-
-          <div class="container mt-5">
-            <!-- List of Skills -->
-            <div class="row justify-content-center">
-              <div class="col-8">
-                <ul class="list-group mb-4">
-                  <li class="list-group-item active">Language Skills</li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Bangla
-                    <span class="badge bg-primary rounded-pill">Advanced</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    English
-                    <span class="badge bg-success rounded-pill">Intermediate</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Hindi
-                    <span class="badge bg-warning text-dark rounded-pill">Beginner</span>
-                  </li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">
-                    German
-                    <span class="badge bg-secondary rounded-pill">Basic</span>
-                  </li>
-                </ul>
+          <form class="mt-4">
+            <div class="form-group">
+              <label>Select your interests:</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="interestMusic"
+                />
+                <label class="form-check-label" for="interestMusic"
+                  >Music</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="interestSports"
+                />
+                <label class="form-check-label" for="interestSports"
+                  >Sports</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="interestReading"
+                />
+                <label class="form-check-label" for="interestReading"
+                  >Reading</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="interestTraveling"
+                />
+                <label class="form-check-label" for="interestTraveling"
+                  >Traveling</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="interestGaming"
+                />
+                <label class="form-check-label" for="interestGaming"
+                  >Gaming</label
+                >
               </div>
             </div>
-        
-            <!-- Progress Bars -->
-            <div class="row">
-              <div class="col-12">
-                <h5 class="text-center">Proficiency Levels</h5>
-                <div class="progress mb-3">
-                  <div
-                    class="progress-bar bg-primary"
-                    role="progressbar"
-                    style="width: 80%"
-                    aria-valuenow="80"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    Bangla 80%
-                  </div>
-                </div>
-                <div class="progress mb-3">
-                  <div
-                    class="progress-bar bg-success"
-                    role="progressbar"
-                    style="width: 60%"
-                    aria-valuenow="60"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    English 60%
-                  </div>
-                </div>
-                <div class="progress mb-3">
-                  <div
-                    class="progress-bar bg-warning"
-                    role="progressbar"
-                    style="width: 40%"
-                    aria-valuenow="40"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    Hindi 40%
-                  </div>
-                </div>
-                <div class="progress">
-                  <div
-                    class="progress-bar bg-secondary"
-                    role="progressbar"
-                    style="width: 20%"
-                    aria-valuenow="20"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    German 20%
-                  </div>
-                </div>
-              </div>
+          </form>
+        </div>
+
+        <!-- Additional Information Section -->
+        <div class="col-md-4">
+          <form>
+            <div class="form-group">
+              <label for="bloodGroup">Blood Group</label>
+              <select class="form-control bg-light" id="bloodGroup">
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>O+</option>
+                <option>O-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+              </select>
+            </div>
+            <div class="form-group mt-3">
+              <label for="religion">Religion</label>
+              <select class="form-control bg-light" id="religion">
+                <option>Islam</option>
+                <option>Hinduism</option>
+                <option>Christianity</option>
+                <option>Buddhism</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group mt-3">
+              <label for="maritalStatus">Marital Status</label>
+              <select class="form-control bg-light" id="maritalStatus">
+                <option>Single</option>
+                <option>Married</option>
+                <option>Divorced</option>
+                <option>Widowed</option>
+              </select>
+            </div>
+            <div class="form-group mt-3">
+              <label for="photoUpload">Upload Photo</label>
+              <input
+                type="file"
+                class="form-control bg-light"
+                id="photoUpload"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- form end -->
+
+    <div class="container mt-5">
+      <!-- List of Skills -->
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <ul class="list-group mb-4">
+            <li class="list-group-item active">Language Skills</li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Bangla
+              <span class="badge bg-primary rounded-pill">Advanced</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              English
+              <span class="badge bg-success rounded-pill">Intermediate</span>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Hindi
+              <span class="badge bg-warning text-dark rounded-pill"
+                >Beginner</span
+              >
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              German
+              <span class="badge bg-secondary rounded-pill">Basic</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Progress Bars -->
+      <div class="row">
+        <div class="col-12">
+          <h5 class="text-center">Proficiency Levels</h5>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar bg-primary"
+              role="progressbar"
+              style="width: 80%"
+              aria-valuenow="90"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Bangla 90%
             </div>
           </div>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar bg-success"
+              role="progressbar"
+              style="width: 60%"
+              aria-valuenow="60"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              English 60%
+            </div>
+          </div>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar bg-warning"
+              role="progressbar"
+              style="width: 50%"
+              aria-valuenow="40"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Hindi 50%
+            </div>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar bg-secondary"
+              role="progressbar"
+              style="width: 20%"
+              aria-valuenow="20"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              German 20%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container mt-5">
       <div class="row">
@@ -407,7 +518,6 @@
         </div>
       </div>
     </div>
-    
 
     <!-- pagination start -->
 
@@ -430,7 +540,7 @@
         </div>
       </div>
     </div>
-    
+
     <!-- pagination end -->
 
     <script src="./JS/bootstrap.bundle.js"></script>
